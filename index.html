@@ -41,11 +41,22 @@
     
     .bluegreen {
     	color: #75E6DA;
+    	background: #05445E;
     }
     .navyblue {
-    	color: #05445E;
+    	text-color: #05445E;
+    	background: #05445E ;
+
     }
-    .gold{
+    a.btn:hover {
+    	color: #FF75D8;
+    	background: #05445E;
+    }
+    a.btn {
+    	color: #75E6DA;
+    	background: linear-gradient(125deg, #05445E , #07889b );
+    }
+    a.gold, .gold{
     	color:#F8D210;
     }
     h1,h2,h3,h4,.hotpink {
@@ -56,7 +67,7 @@
 
   <body data-bs-spy="scroll" data-bs-target="#navbar-example">   
     <!--Start Scrollpy Navbar Bt5 -->
-	<nav id="navbar-example" class="navbar sticky-top navbar-expand-md navbar-dark babyblue px-3">
+	<nav id="navbar-example" class="navbar sticky-top navbar-expand-md navbar-dark  px-3">
 		<div class="container-fluid">
 			<a class="navbar-brand " href="#">
 		    	<img src="images/favicon-32x32.png"  class=" d-inline-block align-center rounded img-fluid" alt="LogoSaul">
@@ -162,9 +173,9 @@
 		<div class="card mb-3 carta" >
 		  <div class="row g-0">
 		    <div class="col-md-4 ">
-		      <img src="images/profile.jpg" class="img-fluid d-inline-block align-center rounded mx-5 pt-3" width="256" height="256" alt="...">
+		      <img src="images/profile.jpg" class="img-fluid d-inline-block align-center rounded mx-3 pt-3" width="256" height="256" alt="...">
 		    </div>
-		    <div class="col-md-8 ">
+		    <div class="col-md-6 mx-2">
 		      <div class="card-body">
 		        <h3 class="">Acerca de mi</h3>
 		        <p class="card-text"> ¡Hola mi nombre es Saúl Marino Colima Ezquivel! </p>
@@ -172,6 +183,8 @@
 		        	Estudie Ingeniería eléctrica electrónica en la Facultad de Estudios <br>
 		          	Superiores Aragón, actualmente me encuentro en proceso de titulación, <br>
 		          	mi promedio: fue de 8.4 . <br> 
+			  		Me encanta aprender nuevas habilidades, soy autodidacta y de pensamiento crítico, <br>
+			  		me gustan los nuevos retos y siempre logro las metas que me propongo. <br>
 			  		Tengo conocimientos de IOT, electricidad, electrónica, automatización, <br>
 			  		programación de microcontroladores y desarrollo web (backend y frontend).<br>
 			  	</p>
@@ -180,20 +193,20 @@
 		  </div>
 		  
 		  	<div class="row py-3 mx-5 justify-content-between" >
-		  		<div class="col-md-5 text-center">
+		  		<div class="col-md-4 text-center">
 			  		<h4 class=" py-3">Habilidades</h4>
 			  		<ul class="list-group list-group-flush ">
-					  <li class="list-group-item gold">Java</li>
+					  <li class="list-group-item gold">Programacion Front-end</li>
 
-					  <li class="list-group-item ">JavaScript</li>
-					  <li class="list-group-item ">PHP</li>
-					  <li class="list-group-item ">HTML y CSS</li>
-					  <li class="list-group-item ">MySQL</li>
-					  <li class="list-group-item ">Git</li>
+					  <li class="list-group-item ">Desarrollo de sistemas IoT</li>
+					  <li class="list-group-item ">Liderazgo</li>
+					  <li class="list-group-item ">Diseño de circuitos eléctricos</li>
+					  <li class="list-group-item ">Sistemas embebidos</li>
+					  <li class="list-group-item ">Sistemas de control y automatización</li>
 					</ul>  	
 			  	</div>
 			  	
-			  	<div class="col-md-5  text-center  ">
+			  	<div class="col-md-4  text-center  ">
 			  		<h4 class=" py-3">Pasatiempos</h4>
 				  	<ul class="list-group list-group-flush ">
 					  <li class="list-group-item gold">Jugar al futbol</li>
@@ -207,55 +220,64 @@
 					</ul>
 			  	</div>		  
 		    </div>
+		    <div class="container-fluid d-flex justify-content-center py-3">
+		    	<a href="#" download="images/fes.jpg" class="btn btn-outline-info btn-lg gold">Descargar CV</a>
+		    </div>
 		  </div>	
 	</div>
   
   <div class="row pt-5" id="scrollspyHeading2">
   	<h3 >Proyectos</h3>
   	<div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-    <div class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
+	  <div class="col">
+	    <div class="card h-100">
+	      <img src="images/pagina1.png" class="card-img-top" width="400" height="400" alt="control de acceso">
+	      <div class="card-body">
+	        <h4 class="card-title"> Sistema de Control de accesos a habitaciones </h4>
+	        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+	      </div>
+	      <div class=" card-footer d-flex justify-content-center">    
+	      	<a href="#" class="btn btn-outline-info card-link ">Demo</a>
+	        <a href="#" class="btn btn-outline-info card-link ">Código</a>      
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col">
+	    <div class="card h-100">
+	      <img src="images/pagina1.png" class="card-img-top" width="400" height="400" alt="...">
+	      <div class="card-body">
+	        <h4 class="card-title">Invernadero inteligente</h4>
+	        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+	      </div>
+	      <div class=" card-footer d-flex justify-content-center">    
+	      	<a href="#" class="btn btn-outline-info card-link ">Demo</a>
+	        <a href="#" class="btn btn-outline-info card-link ">Código</a>      
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col">
+	    <div class="card h-100">
+	      <img src="images/profile.jpg" class="card-img-top" alt="...">
+	      <div class="card-body">
+	        <h4 class="card-title">SmartHome</h4>
+	        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+	      </div>
+	      <div class=" card-footer d-flex justify-content-center">    
+	      	<a href="#" class="btn btn-outline-info card-link  ">Demo</a>
+	        <a href="#" class="btn btn-outline-info card-link ">Código</a> 
+	            
+	      </div>
+	    </div>
+	  </div>
+ 	</div>
   </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="images/pagina1.png" class="card-img-top" width="400" height="400" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="images/profile.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  </div>
-</div>
-  	
+  <div class="container-fluid pt-5" id="scrollspyHeading3">
+  	<h3 >Lenguajes y Frameworks</h3>
+
   </div>
   
-  <h4 id="scrollspyHeading3">Lenguajes y Frameworks</h4>
+  <p>java (spring boot y vaadin), bt, js, git, php, htmlycss, mysql con imagen</p>
   <p>...</p>
-  <p>...</p>
   <p>.bfoiwhrgjowrpg,oermjgoerjgioerjoijoajgoigeagn..</p>
   <p>.bfoiwhrgjowrpg,oermjgoerjgioerjoijoajgoigeagn..</p>
   <p>.bfoiwhrgjowrpg,oermjgoerjgioerjoijoajgoigeagn..</p>
@@ -264,9 +286,9 @@
   <p>.bfoiwhrgjowrpg,oermjgoerjgioerjoijoajgoigeagn..</p>
   <p>.bfoiwhrgjowrpg,oermjgoerjgioerjoijoajgoigeagn..</p>
   <p>.bfoiwhrgjowrpg,oermjgoerjgioerjoijoajgoigeagn..</p>
-  <h4 id="scrollspyHeading4">Fourth heading</h4>
-  <p>...</p>
-  <p>...</p>
+  <h4 id="scrollspyHeading4">Contacto</h4>
+  <p>Social Media</p>
+  <p>fb, github, instagram, twitter, wa</p>
   <p>.bfoiwhrgjowrpg,oermjgoerjgioerjoijoajgoigeagn..</p>
   <p>.bfoiwhrgjowrpg,oermjgoerjgioerjoijoajgoigeagn..</p>
   <p>.bfoiwhrgjowrpg,oermjgoerjgioerjoijoajgoigeagn..</p>
