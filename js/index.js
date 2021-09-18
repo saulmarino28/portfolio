@@ -1,13 +1,11 @@
 
 $(document).ready(function() {
-	console.log("Hola");
   $.get('paginas/portfolio_es.html', function(res) {
-    //console.log(res);
-    $('#pagina').empty().append(res);
-
-  });
-});
-$(document).on('click', '#prueba', function(e) {
+        //console.log(res);
+        $('#pagina').empty().append(res);
+      });
+	console.log("Hola");
+  $(document).on('click', '#prueba', function(e) {
     //console.log("Hola");
     e.preventDefault();
     var idioma = $('#idioma option:selected').val();
@@ -25,15 +23,17 @@ $(document).on('click', '#prueba', function(e) {
             $('#pagina').empty().append(res);
         });
     }
+    else {
+      $.get('paginas/portfolio_es.html', function(res) {
+        //console.log(res);
+        $('#pagina').empty().append(res);
+      });
+    }
+
+  });
+
 });
 
-
-/*var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-  target: '#navbar-example'
-});
-
-//var exampleEl = document.getElementById('icon');
-//var tooltip = new bootstrap.Tooltip(exampleEl, options); */
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
